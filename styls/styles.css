@@ -1,7 +1,13 @@
 
 main {
     margin: 0px;
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow',
+     Arial, sans-serif;
     text-align: center;
+    border: 1px solid #173B5E;
+    border-radius: 20px;
+    background-color: bisque;
 }
 
 .hero {
@@ -18,7 +24,7 @@ justify-content: center;
     height: 480px;
     background-size: cover;
     background-position: center;
-    border: 2px solid #173B5E;
+    border: 0px solid #173B5E;
     border-radius: 20px;
 }
 
@@ -38,21 +44,21 @@ justify-content: center;
 .activities {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    flex-direction: row;
+    justify-content: center;
 }
 .activities-card {
     width: 720px;
-    height: 480px;
-    border: 2px solid #173B5E;
+    height: 350px;
+    border: 0px solid #173B5E;
     border-radius: 20px;
 }
 
 #activity-image {
-    width: 200px;
-    height: 130px;
-    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 h2 {
@@ -69,4 +75,47 @@ h6 {
     font-size: 13px;
     font-weight: regular;
     color: #000000;
+}
+
+.about-godey {
+     width: 680px;
+    height: 300px;
+    border: 0px solid #173B5E;
+    border-radius: 20px;
+    margin:0px  auto;
+    padding: 30px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    gap: 30px;
+}
+
+#godey-town {
+    width: 250px;
+    height: 180px;
+    margin: 15px
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    
+
+}
+
+p {
+    line-height: 20px;
+}
+
+.card-image {
+    transition: transform 0.3s;
+}
+
+.card-image:hover {
+    transform: scale(2.05);
 }
